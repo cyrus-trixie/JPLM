@@ -7,12 +7,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="icon" href="/assets/church5.jpg" type="assets/church5.jpg">
+    <link rel="stylesheet" href="preloadAnimation.css">
     <title>Im new</title>
     <link rel="stylesheet" href="style.css">
 
     
 </head>
 <body>
+      <!--====== Start Preloader ======-->
+      <div class="preloader">
+        <div class="loader">
+            <div class="pre-shadow"></div>
+            <div class="pre-box"></div>
+        </div>
+    </div><!--====== End Preloader ======-->
     <div class="header hidden md:block" >
  <header>
             <nav class="flex space-x-8 items-center justify-around relative ">
@@ -130,6 +138,8 @@
 
     <script src="/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/preloadAnimation.js"></script>
     <script>
           AOS.init({
     duration: 1000, // duration of animation in milliseconds

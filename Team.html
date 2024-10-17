@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="icon" href="/assets/church5.jpg" type="assets/church5.jpg">
+    <link rel="stylesheet" href="preloadAnimation.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Our Team</title>
     <style>
@@ -25,6 +26,13 @@
     </style>
 </head>
 <body class="bg-gray-100">
+      <!--====== Start Preloader ======-->
+      <div class="preloader">
+        <div class="loader">
+            <div class="pre-shadow"></div>
+            <div class="pre-box"></div>
+        </div>
+    </div><!--====== End Preloader ======-->
     <header class="bg-gray-800 text-white py-4">
         <nav class="container mx-auto flex justify-between items-center">
             <a href="#" class="text-2xl font-bold">Our Team</a>
@@ -137,6 +145,8 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/preloadAnimation.js"></script>
     <script src="/script.js"></script>
 </body>
 </html>

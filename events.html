@@ -7,10 +7,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="icon" href="/assets/church5.jpg" type="assets/church5.jpg">
+    <link rel="stylesheet" href="preloadAnimation.css">
     <link rel="stylesheet" href="style.css">
     <title>Events</title>
 </head>
 <body>
+      <!--====== Start Preloader ======-->
+      <div class="preloader">
+        <div class="loader">
+            <div class="pre-shadow"></div>
+            <div class="pre-box"></div>
+        </div>
+    </div><!--====== End Preloader ======-->
     <div id="Header" style="background: url(/assets2/events.jpg); height: 90vh; background-size: cover; background-repeat: no-repeat; background-position: center;" class="relative">
         <nav class="flex flex-wrap items-center justify-between p-4 md:justify-around">
             <img src="/assets/church5.jpg" alt="Church Logo" class="w-16 rounded-2xl">
@@ -131,6 +139,8 @@
 
     <script src="/Home.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/preloadAnimation.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             AOS.init({
